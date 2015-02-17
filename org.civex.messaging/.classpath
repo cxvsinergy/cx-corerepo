@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry including="**/*.java" kind="src" output="target/test-classes" path="test"/>
+	<classpathentry including="**/*.java" kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="var" path="M2_REPO/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar" sourcepath="M2_REPO/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/local/1/devrepo/mavenrepo/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/junit/junit/4.10/junit-4.10.jar" sourcepath="M2_REPO/junit/junit/4.10/junit-4.10-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/local/1/devrepo/mavenrepo/junit/junit/4.10/junit-4.10-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar" sourcepath="M2_REPO/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1-sources.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
