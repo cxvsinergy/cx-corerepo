@@ -20,7 +20,7 @@ public class AbstractProxyList<E> implements List<E>
 		return true;
 	}
 
-	protected List<E> getImpl()
+	protected List<E> getListImpl()
 	{
 		return list;
 	}

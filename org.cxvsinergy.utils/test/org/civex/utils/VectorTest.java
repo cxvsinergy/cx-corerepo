@@ -3,7 +3,6 @@ package org.civex.utils;
 import junit.framework.TestCase;
 
 import org.civex.utils.numeric.INumericVector;
-import org.civex.utils.numeric.ProtoVector.ProtoMovingVector;
 import org.civex.utils.numeric.RandomVector;
 import org.civex.utils.numeric.SequencedVector;
 import org.civex.utils.numeric.VectorNumber.AdjustedConstantVector;

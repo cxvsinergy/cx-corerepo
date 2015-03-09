@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import org.civex.utils.collections.FrequencyBag;
-
 import junit.framework.TestCase;
+
+import org.civex.utils.collections.FrequencyBag;
 
 public class FrequencyBagTest extends TestCase
 {

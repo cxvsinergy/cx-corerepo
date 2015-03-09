@@ -1,6 +1,6 @@
 package org.civex.utils;
 
-import org.civex.testfwk.ObjectTestCase;
+import org.civex.utils.tests.ObjectTestCase;
 
 public class KeyNumericPairTest extends ObjectTestCase<IntegerKeyValuePair<String>>
 {

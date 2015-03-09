@@ -2,6 +2,8 @@ package org.civex.utils.generators;
 
 import junit.framework.TestCase;
 
+import org.civex.utils.numeric.generators.UniformRandomIntGenerator;
+
 public class UniformRandomIntGeneratorTest extends TestCase
 {
     public void testGen1()

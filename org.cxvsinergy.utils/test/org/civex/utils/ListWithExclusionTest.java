@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import org.civex.demo.*;
+import junit.framework.TestCase;
+
+import org.civex.demo.PokerPlayer;
 import org.civex.utils.collections.ListWithExclusion;
 import org.civex.utils.collections.SeqList;
-
-import junit.framework.TestCase;
 
 public class ListWithExclusionTest extends TestCase
 {

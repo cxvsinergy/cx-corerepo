@@ -6,7 +6,7 @@ import java.util.List;
 
 import junit.framework.TestCase;
 
-import org.civex.utils.resource.AddressPortPair;
+import org.civex.utils.resources.AddressPortPair;
 
 public class AddressPortPairTest extends TestCase
 {

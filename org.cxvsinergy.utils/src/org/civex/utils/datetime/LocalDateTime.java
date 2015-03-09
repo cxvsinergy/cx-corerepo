@@ -1,3 +1,13 @@
+/**********************************************************************
+ * Copyright (c) 2014 cxvsinergy.org., and others. All rights reserved.
+ * Contributors: 
+ * 	@author Vitaly Samoilov - Initial implementation 
+ * 	e-mail : nikevit@gmail.com
+ * project : com.cxvsinergy.utils
+ * History:
+ * 		
+ * 	
+ *******************************************************************/
 package org.civex.utils.datetime;
 
 import java.io.Serializable;
@@ -176,6 +186,16 @@ public class LocalDateTime  implements Comparable<LocalDateTime> , Serializable
 		final Calendar c=Calendar.getInstance(tz);
 		c.setTimeInMillis(getTimeInMillis());
 		return c;
+	}
+	
+	/**for yyyy-MM-dd time format**/
+	public long parseDateOnly(CharSequence s)
+	{
+		if (s.length()==10)
+		{
+			
+		}
+		return parseDateTime(s);
 	}
 	
 	public long parseDateTime(CharSequence s)

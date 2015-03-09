@@ -1,5 +1,7 @@
 package org.civex.utils;
 
+import junit.framework.TestCase;
+
 import org.civex.utils.collections.CircularArrayList;
 import org.civex.utils.collections.CircularNumericArray;
 

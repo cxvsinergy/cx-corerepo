@@ -2,8 +2,8 @@ package org.civex.utils;
 
 import junit.framework.TestCase;
 
-import org.civex.utils.generators.CombinationGenerator;
 import org.civex.utils.numeric.MathUtils;
+import org.civex.utils.numeric.generators.CombinationGenerator;
 
 public class CombinGenTest extends TestCase
 {

@@ -19,7 +19,7 @@ public class ListWithExclusion<E> extends  AbstractProxyList<E>
 	@Override
 	public boolean remove(Object o) 
 	{
-		final int index=this.getImpl().indexOf(o);
+		final int index=getListImpl().indexOf(o);
 		if (index<0) return false;
 		return remove(index)==o;
 	}
@@ -58,7 +58,7 @@ public class ListWithExclusion<E> extends  AbstractProxyList<E>
 	
 	public boolean recover(E o)
 	{
-		final int index=getImpl().indexOf(o);
+		final int index=getListImpl().indexOf(o);
 		if (index<0) return false;
 		if (index<size()) return false; // nothing to recover		
 		exchangeElements(size(), index);
