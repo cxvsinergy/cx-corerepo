@@ -24,15 +24,15 @@ public class YahooDataLoaderMain extends ApplicationMain
 	@Override
 	public void runInstance(String[] args) throws IOException
 	{
-		ResourceLoader loader=UrlResourceLoader.getDefaultResourceLoader();
-		UrlResource res=new UrlResource("http://real-chart.finance.yahoo.com/table.csv?");
+		final ResourceLoader loader=UrlResourceLoader.getDefaultResourceLoader();
+		final UrlResource res=new UrlResource("http://real-chart.finance.yahoo.com/table.csv?");
 		final String path = resolveParam(args, "path", ".");
 		final File fpath = new File(path);
 		final List<String> symbols=AppUtilsHelper.readCollectionFromParam(Arrays.asList(args),"symbols",",","SPY");
 		
-		for (final String symbol:symbols)
+		for (String symbol:symbols)
 		{
-			if (symbol.trim().length()==0) continue;
+			if ((symbol=symbol.trim()).length()==0) continue;
 			final String query = "s=" + symbol + "&d=2&e=8&f=2017&g=d&a=10&b=26&c=2010&ignore=.csv";
 			res.setUrlQueryString(query);
 			printMessage(0, "Loading data for symbol "+symbol+" ...", (Object[])null);
@@ -44,16 +44,9 @@ public class YahooDataLoaderMain extends ApplicationMain
 			{
 				printMessage(3, x.getMessage(), x);
 			}
-			
-			
-
 		}
-			System.exit(0);
+		System.exit(0);
 	}
-	
-	
-	
-	
 	
 
 	@Override
